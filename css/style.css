@@ -125,7 +125,12 @@ hr {
 /*-----------------------------------
          section 2nd start style 
 ------------------------------------- */
-.letes-course {}
+.letes-course {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 300px;
+}
 
 .lates-title {
     color: #562EFF;
@@ -135,13 +140,36 @@ hr {
     margin-bottom: 25px;
 }
 
-.courses {}
-
-.course {}
-
-.course-banner {}
+.courses{
+    background: #f5f5f5a4;
+    border-radius: 5px;
+}
 
 .courses .course-banner img {
     width: 266px;
     height: 141px;
+    margin-bottom: 15px;
+}
+
+.course-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+.course-creator{
+    margin-bottom: 10px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fa-star.fill {
+    color: #FFC014
+}
+
+.fa-star.emty {
+    color: #AEAEAE;
 }
